@@ -198,6 +198,7 @@ for (let index = 0; index < etudiant.length; index++) {
 //-------------------------------------------------------------------------------------------------------------
 
 //TP IMAGES
+
 document.querySelectorAll("#galerie img").forEach(element => {
     element.addEventListener("click", function () {
         document.querySelector("#imageZoomee").src=this.src;

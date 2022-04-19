@@ -388,29 +388,45 @@ function verif() {
 //---------------------------------------------------------------------
 
 //THIS -> cibler un élément/objet courant
-function change() {
-    this.style.backgroundColor="blue";    
-}
-document.querySelectorAll("input").forEach(element => {
-    element.addEventListener("mouseover", change);
-});
+    function change() {
+        this.style.backgroundColor="blue";    
+    }
+    document.querySelectorAll("input").forEach(element => {
+        element.addEventListener("mouseover", change);
+    });
 
 //---------------------------------------------------------------------
 
 //OBJET: EVENT
-function showme(event) {
-    event.preventDefault();
-    var coordonneeX= event.clientX; //client X = position de la souris sur axe X (horizontal)
-    var coordonneeY= event.clientY;
-    document.getElementById("contenu").innerHTML="coordonneeX: " + coordonneeX + ", coordonneeY: " + coordonneeY ;
-}
-document.querySelector("body").addEventListener("mouseover", showme);
+    function showme(event) {
+        event.preventDefault();
+        var coordonneeX= event.clientX; //client X = position de la souris sur axe X (horizontal)
+        var coordonneeY= event.clientY;
+        document.getElementById("contenu").innerHTML="coordonneeX: " + coordonneeX + ", coordonneeY: " + coordonneeY ;
+    }
+    document.querySelector("body").addEventListener("mouseover", showme);
 
 //--------------------------------------------------------------------
 
 //objet window
-function openWindow() {
-    window.open("file:///U:/75013-46-06/javaScript/exo.html", "popup", "toolbar=width=500,height=500");
-}
+    function openWindow() {
+        window.open("file:///U:/75013-46-06/javaScript/exo.html", "popup", "toolbar=width=500,height=500");
+    }
 
 //----------------------------------------------------------------------
+
+//INTERFACE NODE
+console.log(document.querySelector(".lenfant").parentNode);
+console.log(document.querySelector(".leparent").firstChild);
+console.log(document.querySelector(".leparent").firstElementChild);
+console.log(document.querySelector(".leparent").lastChild.previousSibling.innerHTML);
+console.log(document.querySelector(".leparent").lastChild); // /!\ considère les espaces comme du texte
+console.log(document.querySelector(".leparent").lastElementChild);
+
+//Créer un élement
+var nouveau = document.createElement("p"); // on crée la balise de l'élément
+console.log(nouveau);
+var text=document.createTextNode("hello"); // on prépare le contenu
+console.log(text);
+nouveau.append(text); // ajout du texte dans la balise
+document.body.append(nouveau) // ajout de la balise dans le body //append : ajoute à la fin
