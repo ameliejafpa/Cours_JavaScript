@@ -1,0 +1,22 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#zoom{
+    width: 70%;
+}
+
+#galerie{
+    width: 25%;
+}
+
+#galerie img{
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+}
+
+#zoom img{
+    width: 100%;
+}

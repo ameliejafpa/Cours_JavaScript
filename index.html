@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        img{width: 90%;}
+    </style>
+
+    <!-- appel de app.js -->
+    <!-- <script src="app.js"></script> -->
+
+    <script>
+    // je peux écrire tout le js que je veux entre ces balises
+    </script>
+
+</head>
+<body>
+    <h1>JavaScript</h1>
+    Regarde dans inspecter -> console : le code JS apparait, et en bleu à droite l'emplacement (ici : hello apparait dans app.js, ligne3)
+    <hr>
+
+    <p> clique <a href="javascript:openWindow()">ici</a> pour acceder aux exos</p>
+
+    <h1>fonction closures</h1>
+        <a href="#" onclick="compteur()">clic fonction basique</a>
+        <a href="#" onclick="securite()">clic + sécurisé</a>
+
+    <hr>
+    les noms de variables valides
+    <img src="media/noms_de_variables.png" alt="">
+    <hr>
+    les opérateurs de calcul
+    <img src="media/operateurs.png" alt="">
+    <hr>
+    les comparateurs
+    <img src="media/comparateurs1.png" alt="">
+    <img src="media/comparateurs2.png" alt="">
+    <hr>
+    les opérateurs logiques
+    <img src="media/operateurs_logiques.png" alt="">
+    <h4>OU exclusif (l'un ou l'autre mais pas les 2) : (a ^ b)</h4>
+    <hr>
+
+    <script>
+        // je peux écrire tout le js que je veux entre ces balises
+    </script>
+    <hr>
+    les objets prédéfinis
+    <img src="media/objets_predefinis.png" alt="">
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank" >documentation officielle des fonctions mathématiques</a> <br>
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" >documentation officielle des fonctions tableaux</a><br>
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >documentation officielle des fonctions date</a><br>
+
+    <hr>
+    
+    <div id="cda">id cda: Lorem ipsum dolor sit amet.</div>
+    <div class="afpa">classe afpa Lorem.</div>
+    <div class="afpa">classe afpa Lorem.</div>
+    <div class="afpa">classe afpa Lorem.</div>
+    <p>type p Lorem ipsum dolor sit amet consectetur.</p>
+    <div id="cda2">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+
+    <hr>
+
+    <form action="#" method= "post" onsubmit="verif(event)">
+        <label>Nom<input id="nom" type="text" name="nom"></label>
+        <label>Prénom<input id="prenom" type="text" name="prenom"></label><br>
+        <label>Tel<input id="tel" type="text" maxlength="10" name="telephone"></label>
+        <label>Email<input id="email" type="text" name="mail"></label>
+
+        <input type="submit" name="valider" value="Valider">
+    </form>
+
+    <hr>
+    <h3>LES EXPRESSIONS REGULIERES (REGEX)</h3><br>
+    <img src="media/regex.png" alt="">
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" >documentation officielle des fonctions mathématiques</a> <br>
+
+    <hr>
+    <h3>OBJET EVENT</h3>
+    <div id="contenu">   </div>
+    <img src="media/event.png" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- appel du script à la fin pour qu'il se fasse après le html -->
+    <script src="app.js"></script>
+
+</body>
+</html>
